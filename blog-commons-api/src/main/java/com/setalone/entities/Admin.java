@@ -5,15 +5,20 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-
 /**
- * @auther zzyy
- * @create 2020-02-18 17:22
- */
+ * @Author setalone
+ * @Description
+ * @Param
+ * @return
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Payment implements Serializable {
-    private Long id;
+public class Admin implements Serializable {
+    private int id;
+    private String username;
+    private String password;
     private String serial;
+
+
 }
