@@ -1,0 +1,27 @@
+可以使用TEXT,BLOB俩种类型来存储长文本。
+
+1. TEXT
+
+TEXT有4有类型：
+
+TINYTEXT 256bytes
+
+TEXT 64kb
+
+MEDIUMTEXT 16Mb
+
+LONGTEXT 4GB
+
+2. BLOB
+
+TINYBLOB
+
+BLOB、
+
+MEDIUMBLOB
+
+LONGBLOB
+
+blob 保存的是二进制数据，利用这个特性，可以把图片存储到数据库里面。text只能存储文本。
+
+长使用的是text的，因为blob存储的是二进制格式，所以长文本里面的搜有数据都是二进制数据，在上传图文的时候，传过来是String,保存起来，读取都需要转换，还有javaBean设计的时候也要把文本的类型弄成BLOB类型，在加上hibernate 4 ，生成blob对象还要LobHelper,各种麻烦，于是就使用text来存储。
