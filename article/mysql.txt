@@ -1,3 +1,5 @@
+mysql
+
 可以使用TEXT,BLOB俩种类型来存储长文本。
 
 1. TEXT

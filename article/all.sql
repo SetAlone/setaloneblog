@@ -3,7 +3,7 @@
 # 管理员表 admin
 CREATE TABLE `admin`
 (
-    `admin_id`       bigint(20)  NOT NULL COMMENT '管理员id',
+    `admin_id`       bigint(10)  NOT NULL COMMENT '管理员id',
     `admin_username` varchar(31) NOT NULL COMMENT '账号',
     `admin_password` varchar(31) NOT NULL COMMENT '密码',
     PRIMARY KEY (`admin_id`) USING BTREE
